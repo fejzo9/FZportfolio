@@ -13,13 +13,13 @@ const Experience: React.FC = () => {
           <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 top-0 h-full w-0.5 bg-slate-200"></div>
 
           {EXPERIENCES.map((exp, index) => (
-            <div key={exp.id} className={`relative flex items-center justify-between md:justify-normal mb-12 w-full ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
+            <div key={exp.id} className={`relative flex items-start justify-between md:justify-normal mb-12 w-full ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
               
               {/* Spacer for desktop alternate layout */}
               <div className="hidden md:block w-5/12"></div>
 
               {/* Center Point */}
-              <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-white border-4 border-blue-500 rounded-full z-10 flex items-center justify-center">
+              <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-white border-4 border-blue-500 rounded-full z-10 flex items-center justify-center top-0 mt-4">
                 <div className="w-2.5 h-2.5 bg-blue-500 rounded-full"></div>
               </div>
 
